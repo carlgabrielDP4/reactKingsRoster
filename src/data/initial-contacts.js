@@ -10,7 +10,7 @@ export const INITIAL_CONTACTS = [
     _id: "5f90d372-7bdf-4b39-b621-cf6d3cd975f4",
     name: "Domantas Sabonis",
     phoneNumber: "PPG: 19.4 | APG: 8.2 | RPG: 13.7",
-    funFact: "A versatile big man, equally adept at scoring and playmaking. Proud father of AD (SHOT JOSH)",
+    funFact: "A versatile big, equally adept at scoring and playmaking. Proud father of AD",
     photoUrl: "https://pbs.twimg.com/media/F_CHvibXEAA35nR.jpg"
   },
   {
