@@ -56,4 +56,11 @@ export const INITIAL_CONTACTS = [
     funFact: "Michael Jordan has no left hand, and played against art history majors in 97'",
     photoUrl: "https://i.kym-cdn.com/entries/icons/original/000/049/004/lebronsunshinecover.jpg"
   },
+  {
+    _id: "abcd123-carl-476f-dela-8791pen32794",
+    name: "Carl Dela Pena",
+    phoneNumber: "NBA Commissioner",
+    funFact: "Frontend > Backend.",
+    photoUrl: "https://media.licdn.com/dms/image/D5603AQGI9WjCO6IOXg/profile-displayphoto-shrink_200_200/0/1713972451912?e=1721260800&v=beta&t=lrwJ22H5huHWFD31G58x_HTzUGk1tNQO2V7bU7Ln34Q"
+  },
 ];
