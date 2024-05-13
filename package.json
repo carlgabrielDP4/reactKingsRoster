@@ -1,13 +1,13 @@
 {
-  "homepage": "http://carlgabrielDP4.github.io/reactKingsRoster",
+  "homepage": "http://carlgabrielDP4.github.io/reactKingsRoster/",
   "name": "wdcc-react-workshop-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
