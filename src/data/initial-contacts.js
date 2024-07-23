@@ -63,7 +63,7 @@ export const INITIAL_CONTACTS = [
     name: "Carl Dela Pena",
     phoneNumber: "NBA Commissioner",
     funFact: "Frontend > Backend.",
-    photoUrl: "https://media.licdn.com/dms/image/D5603AQGI9WjCO6IOXg/profile-displayphoto-shrink_400_400/0/1713972451912?e=1727308800&v=beta&t=aA3Kr5dxNYEPBeemWv7fYlFD3aFKUmdjau8SgKfxuro"
+    photoUrl: "https://avatars.githubusercontent.com/u/119389092?v=4"
   },
 
 ];

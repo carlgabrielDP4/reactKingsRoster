@@ -1,9 +1,7 @@
-//the stuff below is when i wanna get from data folder so i dont clog app.jsx with json data
-
 import styles from "./App.module.css";
 import ContactDisplay from "./components/ContactDisplay";
 import Sidebar from "./components/Sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { INITIAL_CONTACTS } from "./data/initial-contacts.js"; 
 
 export default function App() {
@@ -14,15 +12,55 @@ export default function App() {
     setContact(c);
   }
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://widgets.proballers.com/dist/team-schedule-results-banner-widget-v1.1.js";
+    script.async = true;
+    script.onload = () => {
+      if (window.PbTeamScheduleResultsBannerWidget) {
+        window.PbTeamScheduleResultsBannerWidget.render();
+      }
+    };
+    document.body.appendChild(script);
+
+    const eventHandler = () => {
+      if (window.PbTeamScheduleResultsBannerWidget) {
+        window.PbTeamScheduleResultsBannerWidget.render();
+      }
+    };
+    window.addEventListener("load", eventHandler);
+
+    return () => {
+      window.removeEventListener("load", eventHandler);
+    };
+  }, []);
+
   return (
-    <>
-      <div className={styles.container}>
-        <Sidebar contacts={contacts} onContactClicked={handleContactClicked} />
-        {contact != null ? <ContactDisplay contact={contact} /> : undefined}
-      </div>
-    </>
+    <div className={styles.container}>
+      <Sidebar contacts={contacts} onContactClicked={handleContactClicked} />
+      {contact != null ? (
+        <ContactDisplay contact={contact} />
+      ) : (
+        <div className={styles["center-content"]}>
+          <div 
+            className={`proballers-widget-team-schedule-results-banner ${styles["proballers-widget-container"]}`} 
+            data-proballers-widget-id="c183f270-bff0-40ac-959c-9b9c6e0cfd3c"  
+            style={{ fontFamily: 'Roboto Slab, serif', marginTop: '160px' }}
+          >
+            <a href="https://www.proballers.com/" target="_blank" rel="noreferrer">
+              Credit to Proballers.com
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
+
+
+
+
+
 
 
 // the stuff below is when i wanna have only a few json within the app.jsx
