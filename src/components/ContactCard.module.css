@@ -10,18 +10,10 @@
 }
 
 .card:is(.active, :hover) {
-  background-color: #4407ec91; 
+  background-color: #4407ec91;
 }
 
 img {
   border-radius: 50%;
   height: 60px;
 }
-
-/*idk what this does tbh
-/* .placeholder {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: rgb(247, 247, 247);
-} */
