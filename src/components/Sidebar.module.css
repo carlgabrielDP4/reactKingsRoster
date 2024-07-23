@@ -1,18 +1,21 @@
-@keyframes spinning-border {
+@keyframes pulsing-glow {
   0% {
-    box-shadow: 0 0 5px 5px rgba(91, 2, 255, 0.445);
-  }
-  25% {
-    box-shadow: 5px 0 5px 5px rgba(91, 2, 255, 0.445);
+    box-shadow: 0 0 10px rgba(91, 2, 255, 0.7);
   }
   50% {
-    box-shadow: 5px 5px 5px 5px rgba(91, 2, 255, 0.445);
-  }
-  75% {
-    box-shadow: 0 5px 5px 5px rgba(91, 2, 255, 0.445);
+    box-shadow: 0 0 30px rgba(91, 2, 255, 1);
   }
   100% {
-    box-shadow: 0 0 5px 5px rgba(91, 2, 255, 0.445);
+    box-shadow: 0 0 10px rgba(91, 2, 255, 0.7);
+  }
+}
+
+@keyframes idle-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(91, 2, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(91, 2, 255, 0.5);
   }
 }
 
@@ -38,9 +41,16 @@ body {
   height: 28px;
   width: 188px;
   margin-bottom: 20px;
-  animation: spinning-border 2s infinite linear;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  transition: width 0.3s ease, height 0.3s ease;
+  animation: idle-glow 3s infinite;
+}
+
+.searchbar:focus {
+  width: 250px;
+  height: 35px;
+  animation: pulsing-glow 1.5s infinite;
 }
 
 .corner {
