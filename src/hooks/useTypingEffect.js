@@ -9,8 +9,9 @@ export const useTypingEffect = (text = '', speed = 200) => {
       return;
     }
 
-    setDisplayedText('');
+    setDisplayedText(text[0]);
     let currentIndex = 0;
+    
 
     const intervalId = setInterval(() => {
       setDisplayedText((prev) => prev + text[currentIndex]);
@@ -21,7 +22,7 @@ export const useTypingEffect = (text = '', speed = 200) => {
     }, speed);
 
     return () => {
-      clearInterval(intervalId); 
+      clearInterval(intervalId);
     };
   }, [text, speed]);
 

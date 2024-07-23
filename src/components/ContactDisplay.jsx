@@ -3,9 +3,9 @@ import { useTypingEffect } from '../hooks/useTypingEffect';
 import styles from "./ContactDisplay.module.css";
 
 export default function ContactDisplay({ contact }) {
-    const typedName = useTypingEffect(contact.name || '', 100);
-    const typedPhoneNumber = useTypingEffect(contact.phoneNumber || '', 50);
-    const typedFunFact = useTypingEffect(contact.funFact || '', 25);
+    const typedName = useTypingEffect(contact.name || '', 50);
+    const typedPhoneNumber = useTypingEffect(contact.phoneNumber || '', 30);
+    const typedFunFact = useTypingEffect(contact.funFact || '', 50);
 
     return (
         <main className={styles.container}>
