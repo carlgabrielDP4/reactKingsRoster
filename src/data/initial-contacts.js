@@ -33,7 +33,7 @@ export const INITIAL_CONTACTS = [
   {
     _id: "71b5ed07-9e1e-47d0-937a-64c396d5567b",
     name: "Keegan Murray",
-    phoneNumber: "PPG: 15.2 APG: 1.7 RPG: 5.5",
+    phoneNumber: "PPG: 15.2 | APG: 1.7 | RPG: 5.5",
     funFact: "Lights out shooter with versatile lockdown on defense.",
     photoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52LSHgdIXy3yXL2jgU6gZp4DO2PuDSgQITVb3cZtgSLKF6qa_O1Jmvrv_LEjYTUdZ8NE&usqp=CAU"
   },
@@ -54,8 +54,8 @@ export const INITIAL_CONTACTS = [
   {
     _id: "732c620f-8233-476f-99a2-8791aac32794",
     name: "LeSunshine",
-    phoneNumber: "PPG: 55.3 APG: 62.4 RPG: 30.2",
-    funFact: "Michael Jordan has no left hand, and played against art history majors in 97'",
+    phoneNumber: "PPG: 55.3 | APG: 62.4 | RPG: 30.2",
+    funFact: "Michael Jorgambler has no left hand. Played against art history majors in 97'",
     photoUrl: "https://files.vrchat.cloud/World-LeSunshine-Image-202236f1_.file_1113d5ce-1220-4e4a-87e7-c1ebd68ff1fe.1.png?Expires=1723680000&Key-Pair-Id=K3JAQ0Y971TV2Z&Signature=NJwgodQzxV3y0E13sOk3FXh2HaZgN8EFdAL~Y~uFx8D5Krul26lCrCG4rdV1FtEotVoWzjXIaK0L6TpQhfKGCAVIehQdOw8hM1rX0Rx1ifMJ7CCJqLJCZgNT5BpRPcJw-yj~oidEZzKiTBmhUqWrsjsM5E-RVLfuSgK64dRMqJe~bX0ZTd7plNhbhQNZaB0i4Fv6kYhaYCMuLH8PbHSyTlAQlsVNuUGPaYNkYh1HjF1vuTZ0EWH55jRIUZyf9GlJi5b8yKBQ9sS3teeEDOqOTWwbaCcZa3HCMyPcvxwbLIr5IvwmBiUPk-R0~mV0HBWJNhlfsEdOaqdauffSIl403Q__"
   },
   {
@@ -65,4 +65,5 @@ export const INITIAL_CONTACTS = [
     funFact: "Frontend > Backend.",
     photoUrl: "https://media.licdn.com/dms/image/D5603AQGI9WjCO6IOXg/profile-displayphoto-shrink_400_400/0/1713972451912?e=1727308800&v=beta&t=aA3Kr5dxNYEPBeemWv7fYlFD3aFKUmdjau8SgKfxuro"
   },
+
 ];

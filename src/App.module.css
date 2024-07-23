@@ -1,3 +1,8 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .container {
   max-width: 960px;
   display: flex;
@@ -15,7 +20,6 @@
   box-shadow: 0px 0px 32px 32px rgba(91, 2, 255, 0.445); 
 }
 
-/* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 12px;
 }
